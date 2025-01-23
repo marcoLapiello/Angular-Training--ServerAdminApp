@@ -1,4 +1,4 @@
-import { Component, Input, ViewEncapsulation } from '@angular/core';
+import { Component, HostListener, Input, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-form-control',
@@ -8,9 +8,16 @@ import { Component, Input, ViewEncapsulation } from '@angular/core';
   styleUrl: './form-control.component.css',
   encapsulation: ViewEncapsulation.None,
   host: {
-    class: 'control'
+    class: 'control',
+    '(click)': 'onClick()'
   }
 })
 export class FormControlComponent {
   @Input() label!: string;
+
+  // @HostListener('click') onClick() {
+  //   console.log('clicked');
+  // }
+
+  
 }
