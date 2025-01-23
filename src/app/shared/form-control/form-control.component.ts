@@ -6,7 +6,10 @@ import { Component, Input, ViewEncapsulation } from '@angular/core';
   imports: [],
   templateUrl: './form-control.component.html',
   styleUrl: './form-control.component.css',
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
+  host: {
+    class: 'control'
+  }
 })
 export class FormControlComponent {
   @Input() label!: string;
