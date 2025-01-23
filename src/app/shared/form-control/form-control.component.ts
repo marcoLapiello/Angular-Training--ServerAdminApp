@@ -19,5 +19,7 @@ export class FormControlComponent {
   //   console.log('clicked');
   // }
 
-  
+  onClick() {
+    console.log('clicked');
+  }
 }
