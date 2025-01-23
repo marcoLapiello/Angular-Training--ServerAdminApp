@@ -1,11 +1,12 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-form-control',
   standalone: true,
   imports: [],
   templateUrl: './form-control.component.html',
-  styleUrl: './form-control.component.css'
+  styleUrl: './form-control.component.css',
+  encapsulation: ViewEncapsulation.None
 })
 export class FormControlComponent {
   @Input() label!: string;
